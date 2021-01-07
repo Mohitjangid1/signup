@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta name="descriptison" content="We belive in to provide a platform where everyone start the first step of his\her carier ">
+	<meta name="keywords" content="web-devloper, graphic-designer,freelencer,work">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+    <div class="main-w3layouts wrapper">
+        <h1> SignUp</h1>
+        <div class="main-agileinfo">
+            <div class="agileits-top">
+                <form action="#" method="post">
+                    <input class="text" type="text" name="Username" placeholder="Username" required="">
+                    <input class="text email" type="email" name="email" placeholder="Email" required="" >
+                    <input class="text" type="password" name="password" placeholder="Password" required="">
+                    <input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+                    <div class="wthree-text">
+                        <label class="anim">
+                            <input type="checkbox" class="checkbox" required="">
+                            <span>I Agree To The Terms & Conditions</span>
+                        </label>
+                        <div class="clear"> </div>
+                    </div>
+                    <input type="submit" value="SIGNUP">
+                </form>
+                <p>Already have an Account? <a href="#"> SignUp Now!</a></p>
+            </div>
+        </div>
+       
+        <div class="colorlibcopy-agile">
+            <p>© 2020 Signup Form. All rights reserved | Design by <a href="=#" target="_blank">Mohit jangid</a></p>
+        </div>
+        
+        <ul class="colorlib-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <?php
+            //connecting to the database
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $database = "mohit";
+
+            //create a connection
+            $conn = mysqli_connect($servername, $username, $password, $database);
+
+            //Die if connection is was not successfull
+            if (!$conn){
+                die("sorry we failed to connect: ". mysqli_connect_error()); 
+            }
+            else{
+                echo"connection was successfull<br>";
+            }
+
+    ?>
+
+</body>
+</html>
